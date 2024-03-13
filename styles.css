@@ -59,7 +59,7 @@ form {
     margin-top: 150px;
 }
 
-#email-box {
+#email {
     height: 30px;
     min-width: 265px;
     margin: 10px 0;
@@ -157,6 +157,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: gainsboro;
+}
+
+.footer-item {
+    padding-right: 20px;
 }
 
 /* Media adjustments */
