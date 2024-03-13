@@ -1,1 +1,155 @@
- 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+.logo {
+    width: 60vh
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-link {
+    padding-right: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 150px;
+}
+
+#email-box {
+    height: 30px;
+    min-width: 265px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+#submit {
+    height: 40px;
+    width: 120px;
+    background-color: red;
+    border-style: none;
+    border-radius: 5px;
+    color: #eee;
+    font-weight: 900;
+}
+
+/* FEATURES */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#features {
+    margin-top: 20px;
+}
+
+.feature-container {
+    margin-top: 50px;
+}
+
+/* VIDEO */
+.video-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PRICING */
+#pricing {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.product-title {
+    padding: 20px 0;
+    background-color: gainsboro;
+    width: 100%;
+}
+
+.product-img {
+    margin-top: 20px;
+}
+
+.product-price {
+    margin-top: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.product-text {
+    padding: 0 30px;
+}
+
+.product-button {
+    margin: 20px 0;
+    height: 2rem;
+    width: 4rem;
+    background-color: red;
+    border-style: none;
+    border-radius: 3px;
+    color: #eee;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gainsboro;
+}

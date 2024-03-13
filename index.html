@@ -8,26 +8,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <title>String Scape Guitars</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header id="header">
         <div class="logo">
-            <img src="#logo_image" alt="">
+            <img src="./assets/logo.jpg"
+                alt="Lorem Ipsum Guitar Logo"
+                height="100px"
+            >
         </div>
-        <nav class="nav-link">
+        <nav id="nav-bar">
             <!-- Navigation links that take the user to corresponding secions of the page -->
             <!-- At least 3 clickable elements -->
             <ul>
                 <li>
-                    <a class="nav-link" href="#features"></a>
+                    <a class="nav-link" href="#features">Features</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#how-it-works"></a>
+                    <a class="nav-link" href="#how-it-works">How It Works</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#pricing"></a>
+                    <a class="nav-link" href="#pricing">Pricing</a>
                 </li>
             </ul>
         </nav>
@@ -36,19 +40,84 @@
     <!-- FORM -->
     <section>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input name="email" id="email" type="email" placeholder="Enter in your email address" required>
+            <h2>How low, will you go?</h2>
+            <input name="email" id="email-box" type="email" placeholder="Enter in your email address" required>
             <input id="submit" type="submit" value="Get Started" class="btn">
         </form>
     </section>
     
     <!-- FEATURES -->
-    <section id="features"></section>
+    <div class="container">
+        <section id="features">
+            <div class="feature-container">
+                <h2 class="feature-title">Extensive Guitar Selection</h2>
+                <p class="feature-text">Discover a wide range of guitars catering to various styles, skill levels, and budgets. From acoustic to electric, beginner to professional models, our store offers something for every guitarist.</p>
+            </div>
+            <div class="feature-container">
+                <h2 class="feature-title">Expert Staff Assistance</h2>
+                <p class="feature-text">Our knowledgeable staff is here to guide you in finding the perfect guitar. Whether you're a seasoned musician or just starting out, we'll provide personalized recommendations and assistance to ensure you make the right choice.</p>
+            </div>
+            <div class="feature-container">
+                <h2 class="feature-title">Quality Assurance Guarantee</h2>
+                <p class="feature-text">Shop with confidence knowing that every guitar in our store undergoes rigorous quality checks. We stand behind the craftsmanship and playability of our instruments, ensuring that you'll receive a reliable and satisfying guitar that inspires your musical journey.</p>
+            </div>    
+        </section>
+    
+        <!-- HOW IT WORKS VIDEO -->
+        <section id="how-it-works">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hEOuGs7m8bw?si=3lXxznBK1zBNgAaB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+    
+        <!-- PRICING -->
+        <section id="pricing">
+            <div class="pricing-container">
+                <div class="product-panel">
+                    <h3 class="product-title">6 String Electric Guitar</h3>
+                    <img class="product-img" src="./assets/six_string.webp" alt="6 string electric guitar" width="200px">
+                    <p class="product-price">$500</p>
+                    <p class="product-text">This is a 6 string guitar!</p>
+                    <button class="product-button">BUY</button>
+                </div>
+            </div>
+            <div class="pricing-container">
+                <div class="product-panel">
+                    <h3 class="product-title">7 String Electric Guitar</h3>
+                    <img class="product-img" src="./assets/seven_string.webp" alt="7 string electric guitar" width="200px">
+                    <p class="product-price">$800</p>
+                    <p class="product-text">This is a 7 string guitar!</p>
+                    <button class="product-button">BUY</button>
+                </div>
+            </div>
+            <div class="pricing-container">
+                <div class="product-panel">
+                    <h3 class="product-title">8 String Electric Guitar</h3>
+                    <img class="product-img" src="./assets/eight_string.webp" alt="8 string electric guitar" width="200px">
+                    <p class="product-price">$1100</p>
+                    <p class="product-text">This is a 6 string guitar!</p>
+                    <button class="product-button">BUY</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    
 
-    <!-- HOW IT WORKS VIDEO -->
-    <section id="how-it-works"></section>
-
-    <!-- PRICING -->
-    <section id="pricing"></section>
-    <footer></footer>
+    <!-- FOOTER -->
+    <footer>
+        <nav class="footer-nav">
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a class="nav-link" href="#">Privacy</a>
+                </li>
+                <li class="footer-item">
+                    <a class="nav-link" href="#">Terms</a>
+                </li>
+                <li class="footer-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
