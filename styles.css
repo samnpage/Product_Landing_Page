@@ -9,6 +9,11 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
 }
 
+li {
+    white-space: nowrap;
+    overflow:hidden;
+}
+
 /* HEADER */
 header {
     position: fixed;
@@ -23,7 +28,7 @@ header {
 }
 
 .logo {
-    width: 60vh
+    /* width: 60vh */
 }
 
 nav ul {
@@ -152,4 +157,40 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: gainsboro;
+}
+
+/* Media adjustments */
+@media screen and (max-width: 991px) {
+    nav ul:not(.footer-list) {
+        display: block;
+    }
+
+    #features, #how-it-works, #pricing {
+        text-align: center;
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul:not(.footer-list) {
+        display: flex;
+        padding: 20px 0;
+    }
+
+    #features, #how-it-works, #pricing {
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    #pricing {
+        display: block;
+        align-items: center;
+    }
 }
